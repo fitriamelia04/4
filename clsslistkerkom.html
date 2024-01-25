@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin:5px
+        }
+        .v{
+            display: flex;
+            height: 50px;
+
+        }
+        .blue{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin:5px
+        }
+        .red{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin:5px
+        
+        }
+        .yellow{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            margin:5px
+        }
+    </style>
+</head>
+<body>
+    <div class="black" id="hitam"></div>
+    <div class="v" >
+        <div class="blue" id="biru" onclick="biru()"></div>
+        <div class="red" id="merah" onclick="merah()"></div>
+        <div class="yellow" id="kuning" onclick="kuning()"></div>
+    </div>
+    <script>
+            var hitam=document.getElementById("hitam")
+            function biru(){
+                hitam.classList.add("blue")
+                hitam.classList.remove("black")
+                hitam.classList.remove("red")
+                hitam.classList.remove("yellow")
+            }
+            function merah(){
+                hitam.classList.add("red")
+                hitam.classList.remove("blue")
+                hitam.classList.remove("yellow")
+                
+            }
+            function kuning(){
+                hitam.classList.add("yellow")
+                hitam.classList.remove("red")
+                hitam.classList.remove("blue")
+            }
+           
+    </script>
+</body>
+</html>
